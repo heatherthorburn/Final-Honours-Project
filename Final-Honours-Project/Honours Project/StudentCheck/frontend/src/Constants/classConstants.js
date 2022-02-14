@@ -1,0 +1,27 @@
+/*action types for fetching class data, constants used to ensure consistency over action/reducers */
+
+export const CLASS_LIST_REQUEST = 'CLASS_LIST_REQUEST';
+export const CLASS_LIST_SUCCESS = 'CLASS_LIST_SUCCESS';
+export const CLASS_LIST_FAIL = 'CLASS_LIST_FAIL';
+
+export const TIME_LIST_REQUEST = 'TIME_LIST_REQUEST';
+export const TIME_LIST_SUCCESS = 'TIME_LIST_SUCCESS';
+export const TIME_LIST_FAIL = 'TIME_LIST_FAIL';
+
+export const DATE_LIST_REQUEST = 'DATE_LIST_REQUEST';
+export const DATE_LIST_SUCCESS = 'DATE_LIST_SUCCESS';
+export const DATE_LIST_FAIL = 'DATE_LIST_FAIL';
+
+export const SET_CLASS_REQUEST = 'SET_CLASS_REQUEST';
+export const SET_CLASS_FAIL = 'SET_CLASS_FAIL';
+export const SET_CLASS_SUCCESS = 'SET_CLASS_SUCCESS'
+
+export const STUDENT_CLASS_REQUEST = 'STUDENT_CLASS_REQUEST';
+export const STUDENT_CLASS_SUCCESS = 'STUDENT_ClASS_SUCCESS';
+export const STUDENT_CLASS_FAIL = 'STUDENT_CLASS_FAIL';
+export const STUDENT_CLASS_CLEANUP = 'STUDENT_CLASS_CLEAN_UP'
+
+export const SESSION_LIST_REQUEST = 'SESSION_LIST_REQUEST';
+export const SESSION_LIST_SUCCESS = 'SESSION_LIST_SUCCESS';
+export const SESSION_LIST_FAIL = 'SESSION_LIST_FAIL'
+

@@ -1,0 +1,150 @@
+/*
+* All stying related to navigation 
+*/
+
+.drawer {
+  background: #6e145e;
+  height: 100%;
+  font-size: 2rem;
+  color: #fafffe;
+  position: fixed;
+  width: 100vw;
+  max-width: 400px;
+  z-index: 2;
+  left: -100%;
+  transition: 850ms;
+}
+
+.drawer.active {
+  left: 0;
+  transition: 350ms;
+  box-shadow: 2px 2px 20px -2px #312d31;
+  overflow: scroll;
+}
+
+
+.icon {
+  float: left;
+  padding-right: 1rem;
+}
+
+.nav-wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 2px 2px 20px 2px #312d31;
+}
+
+
+.menu-item {
+  width: 100%;
+  padding: 1rem;
+  text-overflow: ellipsis;
+  background: transparent;
+  font-size: inherit;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: none;
+  border-top: none;
+  text-align: left;
+} 
+
+.sub-menu-item {
+  text-decoration: none;
+  padding-left: 0.7rem;
+  padding: 1rem;
+  text-overflow: ellipsis;
+} 
+
+.drawer.active::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+.drawer.active::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.drawer.active::-webkit-scrollbar-thumb {
+  background-color:  #380b31;
+  outline: 1px solid #1d0619;
+}
+
+.sub-menu-item:hover {
+  background: #4e1045
+}
+
+.sub-menu-item {
+  padding-left: 4rem;
+}
+
+.menu-item.btn:hover {
+  background: #380b31;
+
+}
+
+.menu-item.btn:focus {
+  background: #380b31;
+
+}
+
+.menu-item.btn:hover {
+  background: #380b31;
+}
+
+.center-alert{
+  width: 80%;
+  padding: 1rem;
+}
+
+.center-alert-container {
+  text-align: -webkit-center;
+  margin-top: 3rem;
+}
+
+.divide {
+  border-bottom: 1px solid #502b4a;
+}
+
+.menu-item.btn:focus {
+  background: #380b31;
+  border-top: 1px transparent;
+}
+
+.menu-item.btn-primary:hover{
+  border: transparent;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #aaa3b6;
+}
+
+.btnd:focus:active {
+  box-shadow: transparent;
+  border: 1px solid transparent;
+}
+
+.log-out-nav {
+  width: 100%;
+  padding: 1rem;
+}
+
+.menu-title {
+  padding: 0.5rem;
+}
+
+.divider {
+  color: #aaa3b6;
+  font-size: large;
+  font-weight: bold;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+
+

@@ -1,0 +1,62 @@
+/*
+* All styling for the top navigation bar
+*/
+
+.header-style {
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    height: 8vh;
+    min-height: 60px;
+}
+
+.logo {
+    padding: 0;
+    font-weight: bold;
+}
+
+.margin-left {
+    margin-left: auto!important;
+}
+
+.num-notif {
+    text-align: center;
+    border-radius: 35%;
+    padding: 3px;
+    height: 50%;
+    width: 50%;
+    line-height: 2rem;
+    z-index: 1;
+    font-size: 2rem;
+    margin-top: -6px;
+    margin-left: -10px;
+    background: red;
+}
+
+.header-padding {
+    margin-left: 1rem;
+}
+
+.header-padding-right {
+    margin-right: 1.5rem;
+}
+
+.header-button {
+    padding: 1rem;
+    margin-left: 1rem;
+    background-color: transparent;
+    border: none
+}
+
+.header-button:hover {
+    background-color: #3f1d28;
+    border: none;
+    border-radius: 2px;
+}
+
+.header-button::selection {
+    background-color: #3f1d28;
+    border: none;
+    border-radius: 2px;
+}

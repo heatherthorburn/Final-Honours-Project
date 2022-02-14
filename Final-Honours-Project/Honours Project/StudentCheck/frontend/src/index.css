@@ -1,0 +1,980 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ebebeb;
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding-top: 8vh;
+  max-width: 100vw;
+  grid-area: main;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar {
+  height: 100%;
+  background: #341671;
+}
+
+.scroll {
+  width: 200px;
+  height: 400px;
+   background: red;
+  overflow: scroll;
+}
+.scroll::-webkit-scrollbar {
+   width: 12px;
+}
+
+.scroll::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+   border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.home-message {
+  border-radius: 2%;
+  box-shadow: 2px 2px 5px #cac9c9;
+  background: #ffffff;
+  padding: 3rem;
+  width: 80vw;
+}
+
+.stat {
+  text-align: center;
+  padding: 1rem;
+  font-size: xx-large;
+}
+
+.good {
+  fill : seagreen
+}
+
+.warning {
+  fill : darkorange
+}
+
+@media (max-width: 600px) 
+{
+  .hide-mobile {
+    display: none;
+  }
+
+  .hide-mobile.profile-button.margin-right {
+    display: none;
+  }
+}
+
+
+.home-container {
+  height: 87vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+.react-datepicker__input-container input {
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  height: 4rem;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  border: none;
+  padding: .375rem .75rem;
+  padding-top: 0.375rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.75rem;
+}
+
+.max-width-900 {
+  width: 100%;
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+.react-datepicker-wrapper {
+  border: none;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+.profile-component {
+  margin: 1rem;
+  border: 2px solid #2B7A7B;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.chart {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  padding-bottom: 3.5rem;
+}
+
+.table-responsive {
+  padding-top: 1rem;
+}
+
+.student-table-page {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+
+form {
+  font-size: 2rem;
+  padding: 5rem;
+  max-width: 100%;
+}
+
+.button-container {
+    text-align: center;
+}
+
+button.close {
+  color: white;
+}
+
+.coursework-table-container {
+  height: 100%;
+  width: 100%;
+}
+
+.icon-td {
+  text-align: center;
+}
+
+.dropdown {
+  width: 100%;
+  font-size: 3rem;
+}
+
+.btn {
+  font-size: 3rem;
+}
+
+.fill-main {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-card {
+  height: 90%;
+  width: 100vw;
+}
+
+.form-control {
+  height: 4rem;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.attendees-list {
+  padding-top: 2rem;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5rem;
+}
+
+.backdrop {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5 !important;
+  background: black;
+  width: 100%;
+  height: 100%;
+}
+
+.login-form-container {
+  background: red;
+}
+
+
+
+.students-display-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 33% 1fr;
+}
+
+
+.datatable {
+  display: flex;
+}
+
+.datatable-inner {
+  flex-grow: 1;
+}
+
+
+.button {
+  border: 0.3rem solid #AC3B61;
+  background-color: #ffffff;
+  color: #AC3B61;
+  width: 100%;
+  margin: 0;
+}
+
+.button:hover {
+  border: 0.3rem solid #8f3452;
+  background-color: #AC3B61;
+  color: white;
+}
+
+
+.header-button:active,
+.header-button:focus,
+.header-button:active {
+  box-shadow: none;
+  border: none;
+  background: #8f3452;
+  color: white;
+}
+
+.content {
+  margin: 1rem;
+  border: 0.3rem solid #AC3B61;
+}
+
+
+.nav-header {
+  width: 100%;
+  max-width: 100%;
+  background: black;
+  color: white;
+  font-size: x-large;
+}
+
+
+.screen-container {
+  padding: 1rem;
+  height: 100%
+}
+
+.sub-screen-content {
+  background: white;
+  height: 100%;
+  box-shadow: 3px 3px 3px 3px #b1bec0;
+}
+
+.cell {
+  display: inline-block;
+}
+
+.button-container {
+  display: flex;
+}
+
+.custom-select-lg {
+  height: calc(1.5em + 2rem + 2px);
+  font-size: 1.6rem;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 98%;
+}
+
+.button-link {
+  padding: 0;
+  width: 80%;
+}
+
+.warning-indicator {
+  font-size: x-large;
+  color: #f6664c;
+}
+
+.tab-content header {
+  border-bottom: #d0c5d3 solid 0.1rem;
+  padding: 0;
+}
+
+.tab-content header .mb-3 {
+  border-bottom: 0.3rem solid #af8b97;
+  width: 100%;
+}
+
+
+
+.table-card {
+  height: 100%;
+}
+
+.table-card-body {
+  padding: 0;
+}
+
+/*ATTENDANCE */
+
+.attendance-divider {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 100%;
+}
+
+.attendance-divider .card {
+  margin: 2rem;
+}
+
+
+.react-datepicker {
+  font-size: 1.5rem !important;
+}
+
+.react-datepicker__current-month {
+  font-size: 1.7rem !important;
+}
+
+.react-datepicker__header {
+  padding-top: 6px !important;
+}
+
+.react-datepicker__navigation {
+  top: 13px !important;
+}
+
+.react-datepicker__day-name, .react-datepicker__day {
+  margin: 0.7rem !important;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.time-date-select-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.time-date-select-wrapper .button {
+  grid-column: 1/3;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+}
+
+.alert-success {
+  text-align: center;
+}
+
+.alert-danger {
+  width: 100%;
+  text-align: center;
+}
+
+
+.manual-table {
+  height: 100%;
+}
+
+.data-table {
+  overflow: scroll;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-justify {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.up {
+  background-color: #AC3B61;
+  color: white;
+  max-width: 70px;
+  width: 50%;
+}
+
+.notification-div {
+  display: inline-flex;
+  font-size: 2rem;
+}
+
+.notification-holder{
+  display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: end;
+    grid-gap: 1rem;
+}
+
+.notification-holder > .profile-button-link > .profile-button {
+  width:100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.profile-button.circumstance-button {
+  background: #270861;
+  border-color: #230757
+}
+
+.profile-button.circumstance-button:hover {
+  background: #160438;
+  border-color: #14022c
+}
+
+
+.num-notification {
+  background: red;
+  width: 2rem;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+}
+
+.user-functions {
+  display:inline-flex;
+}
+
+.fill-height {
+  height: 100%;
+}
+
+.button-group {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1rem;
+}
+
+
+@media (max-width: 500px) 
+{
+  .button-group {
+    display: flex;
+  }
+}
+
+
+
+.button-group .btn {
+  font-size: 2rem;
+}
+
+.gap {
+  margin-bottom: 1rem;
+}
+
+
+
+/** NEW CSS **/
+
+/** CARD STUFF **/
+
+.card-body {
+  padding: 0;
+}
+
+.card-header {
+  font-weight: bold;
+  text-align: center;
+  background: #574794;
+  color: white;
+}
+
+/** PROFILE BUTTON **/
+
+.profile-button {
+  border: 0.5rem solid #0a818a;
+  background-color: #0a818a;
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.profile-buttton svg {
+  color: white;
+}
+
+
+.profile-button:active {
+  background-color: #006FB5;
+}
+
+.sm-label {
+  padding-right: 0.3rem;
+}
+
+/** FOR PAGES WITH TABLES AND FILTERS, SPLIT TO GRID **/
+
+.table-container-grid {
+  margin: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/** SEARCH BAR FORMATTING **/
+
+.search-bar {
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  border: none;
+}
+
+.search-bar.error {
+  border : 0.2rem solid rgb(185, 2, 2);
+}
+
+.error-message {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: rgb(185, 2, 2);
+}
+
+.percentage-prepend {
+  background-color: #792943;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  font-size: larger;
+}
+
+.dark-button {
+  border: none;
+  background-color: #792943;
+}
+
+/* BUTTON STUFF */
+
+.button-container {
+  display: flex;
+  flex-direction: row-reverse;
+  min-width: 100px;
+}
+
+.page-margin {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.nav-tabs {
+  font-size: 2rem;
+}
+
+.page-margin > .card > .button-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+
+.bottom-space {
+  margin-bottom: 1rem;
+}
+
+.padding-1rem {
+  margin: 1rem;
+}
+
+.margin-1rem {
+  padding: 1rem;
+}
+
+.default-padding {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.lecture-alert-container {
+  width: 100%;
+  grid-column: 1/-1;
+}
+
+/** TABS **/
+
+.card-header-tabs {
+  margin: 0;
+}
+
+.margin-right {
+  margin-right: 1rem;
+}
+
+.lecture-alert {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.margin-left-auto {
+  margin-left: auto;
+}
+
+.grid-gap {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+
+.profile-button.edit {
+  height: 100%;
+  background-color: #F3884F;
+  border: 0.5rem solid #F3884F;
+}
+
+.profile-button.delete {
+  background-color: #D65557;
+  border: 0.5rem solid #D65557;
+}
+
+.logged-out-logo {
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.logged-out-nav {
+  text-align: center;
+}
+/** MEDIA QUERIES **/
+
+@media (max-width: 500px) 
+{
+    .logo
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 950px) 
+{
+
+    .profile-button {
+      background-color: #0a818a;
+      border: 0.5rem solid #0a818a;
+      color: white;
+    }
+  
+    .profile-button svg {
+      font-size: larger;
+    }
+
+    .sm-label
+    {
+      display: none;
+    }
+    
+    .hidden-sm {
+      display: none;
+    }
+}
+
+@media (max-width: 500px) 
+{
+  .hidden-xs {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/** PAGE LAYOUTS **/
+
+.coursework-screen-layout {
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 25% 1fr;
+}
+
+@media (max-width: 1200px) 
+{
+  .coursework-screen-layout {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.table-screen-layout {
+  padding: 1rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.attendance-options-screen-layout {
+  padding: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 700px) 
+{
+  .attendance-options-screen-layout {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.attendance-card-body {
+  max-height: 35vh;
+  overflow: overlay;
+}
+
+.dark-card-header {
+  background-color: #341671;
+}
+
+.form.open {
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  transition: 350ms;
+}
+
+form.closed {
+  top: 0;
+  transition: 350ms;
+}
+
+.add-coursework-button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.span-all-cols {
+  grid-column: 1/-1;
+}
+
+.add-coursework-form {
+  display: grid;
+}
+
+.card.attendance-options-container {
+  max-width: 900px;
+}
+
+.attendance-tabs {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.delete-cw-button-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem;
+}
+
+.delete-cw-button-group > .btn {
+  width: 70%;
+}
+
+.confirm-delete-cw {
+  background-color: #b6003a;
+  border: none
+}
+
+.donot-delete-cw {
+  margin-left: auto;
+  background-color: #707070;
+  border: none;
+}
+
+.filter-button-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.filter-button-group > .btn {
+  border-radius: 10px;
+  background-color: #994f68;
+  border: none;
+}
+
+
+
+
+.danger {
+  color:rgb(185, 2, 2);
+}
+
+.excellent {
+  fill: seagreen;
+}
+
+.align-left {
+  text-align: left;
+}
+
+a.student-icons {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.btn > input {
+  display: none
+}
+
+
+.small-link {
+  color: #341671;
+  font-weight: bold;
+  padding: 0;
+}
+
+.next-button {
+  display: inline;
+  max-width: 150px;
+  width: 50%;
+  margin-left: auto;
+}
+
+.prev-button {
+  display: inline;
+  max-width: 150px;
+  width: 50%;
+  margin-right: auto;
+}
+
+.default-margin-top {
+  margin-top: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.error {
+  font-weight: bold;
+  color:rgb(185, 2, 2);
+  margin-bottom: 1rem;
+}
+
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 300ms linear
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+.fade-exit {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms linear;
+}
+
+label {
+  margin-bottom: 0;
+  font-weight: bold
+}
+
+label.btn.btn-secondary {
+  color: #fff;
+  background-color: #845EC2;
+  border-color: #845EC2;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #3b2c53;
+  border-color: #3b2c53;
+}
+
+.grade {
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.grade.excellent {
+  background: darkgreen;
+  color: white;
+}
+
+.grade.good {
+  background: seagreen;
+  color: white;
+}
+
+.grade.warning {
+  background: darkorange;
+  color: white;
+}
+
+.grade.danger {
+  background:rgb(185, 2, 2);
+  color: white;
+}
